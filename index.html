@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>RPS-радио прошлого столетия</title>
+    <link rel="shortcut icon" type="image/ico" href="https://cdn.discordapp.com/attachments/857315103455707146/859327542863200267/favicon-logo.jpg" />
+    <script ENGINE="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<style>
+html {
+max-width: 768px;
+max-height: 1366px;
+position: relative;
+overflow:  hidden; 
+} 
+
+#text{
+color:crimson;
+position: relative;
+left: 350px;
+margin-top: -39px; 
+font-family:Neoneon;
+font-size: 50px;
+}
+#player {
+position: relative;
+left: 505px;
+margin-top: 250px; 
+}
+.button {
+  display: inline-block;
+  margin: 10px;
+  width: 100px;
+  cursor: pointer;
+  border-radius: 50%;
+  color: black;
+
+  box-shadow: 0 3px 20px rgba(0,0,0,.25),
+  inset 0 2px 0 rgba(255,255,255,.6),
+  0 2px 0 rgba(0,0,0,.1),
+  inset 0 0 20px rgba(0,0,0,.1);
+}
+.play{border-radius:50%;
+    font-family:Times New Roman;
+    margin-top: 219px;
+}
+.stop {border-radius: 50%;
+}
+.volume1 {
+    position: relative;
+    top:-10px;
+    right: 11px;
+}
+.volume2 {
+    position: relative;
+    top: 10px;
+    right: 105px;
+}
+#trak {
+    top: 262px;
+    right: -344px;
+    position: relative;
+    width: 1010px;
+    color: red;
+    font-family:mr_VlaShu;
+     font-size: 30px;
+}
+#rbcloud_cover6302 {
+position: relative;
+    top: 243px;
+    right: -55px; 
+    height: 241px;
+    font-size: 100px;
+    width: 241px;
+}
+#cc_strinfo_title_zahar {
+   font-size: 25px;
+   top: 201px;
+   right: -153px;
+   position: relative;    
+}
+
+#chat{
+    position: relative;
+    top: -500px;
+    right: -566px;
+    
+}
+#lisens {
+    position: relative;
+    top: -268px;
+    right: -1026px;
+    font-size: 40px;
+    font-family:Neoneon;
+    color:#0f27d4;
+}
+#order {
+    position: relative;
+    top: -61px;
+    right:-89px;
+    font-size: 24px;
+}
+
+</style>
+</head>
+<body background="https://megadisk-up.megalabs.ru/storage-api/0/links/file_object/dFxIeAUqyIgyuUblDp0Lujqu/LzE2MTc4MDgyNzRfMzYtcC1mb24tYmVsYXlhLWtpcnBpY2huYXlhLXN0ZW5hLTM2LmpwZz92MTYyNDk0ODY5NTQ0Ng/previews/ovh4q5qjfnfy3cr2wn5yitgaqq/preview?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJwYXRoX2hhc2giOiJrVVFiOERQZDZ0ZjczNm41akhKLWpJV1JFN0EiLCJ1c2VyX2lkIjo5MTU4NjgsImV4cCI6MTYzMjcwMDgwMH0.pAq7atzYP_5ePbtC_JDvON9BgnPk_du1kGrfPm6nLUQ&bk=ovh4q5qjfn";scrolling="no">
+    <header>
+           <nav>
+            <div class="logo-holger"></div>
+            <img src="https://megadisk-up.megalabs.ru/storage-api/0/files/file_object/915868/L2ltZWdlcy9sb2dvLmpwZz92MTYyNDk0ODY5Njk4OA/previews/lsd4yvpd4ffltchkvtoem5e5mm/preview?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJwYXRoX2hhc2giOiJiYlVYeDZmYXhtMmxHVV9CdEU3dERFb3YwTVUiLCJ1c2VyX2lkIjo5MTU4NjgsImV4cCI6MTYzMjcwMDgwMH0.N7Ohk2Jt3JVfYR3vVOTjtRl9zr0ZZo9e6DmlsOq-e9A&bk=lsd4yvpd4f" alt="LOGO" class="logo-img">
+            </nav>
+    </header>
+<div id="text">
+радио прошлого столетия
+</div>
+<!-- RadioBOSS Cloud Artwork Widget (Start) -->
+<img id='rbcloud_cover6302' src='https://c18.radioboss.fm/w/artwork/240.png' width='150' height='150' alt='cover art'>
+<script src='https://c18.radioboss.fm/w/cover.js?u=240&amp;wid=6302'></script>
+<!-- RadioBOSS Cloud Artwork Widget (End) -->
+<!-- RadioBOSS Cloud NowPlaying Widget (Start) -->
+<div id="lisens">Слушателей: <span id='rbcloud_listeners11413'>...</span></div>
+    <div id="trak"><marquee behavior="scroll" direction="right"><div id='rbcloud_nowplaying3383'></div><!-- RadioBOSS Cloud NowPlaying Widget (Start) -->
+<div id='rbcloud_nowplaying11413'></div>
+
+<script src='https://c18.radioboss.fm/w/nowplaying.js?u=240&amp;wid=11413'></script>
+<!-- RadioBOSS Cloud NowPlaying Widget (End) --></marquee></div>    
+    <!-- RadioBOSS Cloud NowPlaying Widget (End) -->
+<div>
+	<button onclick="document.getElementById('player').play()" class="button play">Play</button>
+	<button onclick="document.getElementById('player').pause()"class="button stop">Stop</button>
+	<button onclick="document.getElementById('player').volume+=0.1" class="volume1 volume">Громкость +</button>
+	<button onclick="document.getElementById('player').volume-=0.1" class="volume2 volume">Громкость -</button>
+</div>
+    <div id="chat"><iframe src="https://chatfocus.com/client.php?chat=9688" scrolling="no"width="100%"
+    height="450"></iframe> </div>    
+<audio id="player" src="https://c18.radioboss.fm:18240/stream"></audio>
+</body>    
+</html>   
