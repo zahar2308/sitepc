@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Благодарное радио-радио хороших песен</title>
+    <link rel="shortcut icon" type="image/ico" href="https://cdn.discordapp.com/attachments/857315103455707146/859327542863200267/favicon-logo.jpg" />
+    <script ENGINE="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <meta name="description" content="Благодарное радио-радио хороших песен.Песни 80-90 годов">
+    <script data-ad-client="ca-pub-2843726976523186" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2843726976523186"
+     crossorigin="anonymous"></script>
+     <script src="https://kit.fontawesome.com/b2897e3c94.js" crossorigin="anonymous"></script>
+<style>
+html {
+position: relative;
+overflow:  hidden;
+background: url('https://blagodarnoe.radio.fm/BCsI.gif') no-repeat fixed center / cover;
+  position: relative;
+  overflow-y: scroll;
+} 
+
+#text{
+color:crimson;
+position: relative;
+left: 350px;
+margin-top: -18px; 
+font-family:Neoneon;
+font-size: 50px;
+}
+#player {
+position: relative;
+left: 505px;
+margin-top: 250px; 
+}
+.button {
+  display: inline-block;
+  margin: 10px;
+  width: 100px;
+  cursor: pointer;
+  border-radius: 50%;
+  color: black;
+
+  box-shadow: 0 3px 20px rgba(0,0,0,.25),
+  inset 0 2px 0 rgba(255,255,255,.6),
+  0 2px 0 rgba(0,0,0,.1),
+  inset 0 0 20px rgba(0,0,0,.1);
+}
+.play{border-radius:50%;
+    font-family:Times New Roman;
+    margin-top: 129px;
+}
+.stop {border-radius: 50%;
+}
+.volume1 {
+    position: relative;
+    top:-12px;
+    right: -100px;
+}
+.volume2 {
+    position: relative;
+    top: 10px;
+    right: -5px;
+}
+#trak {
+    top: 232px;
+    right: -344px;
+    position: relative;
+    width: 1010px;
+    color: red;
+    font-family:mr_VlaShu;
+     font-size: 30px;
+}
+#rbcloud_cover6302 {
+position: relative;
+    top: 159px;
+    right: -193px; 
+    height: 241px;
+    font-size: 100px;
+    width: 241px;
+}
+#cc_strinfo_title_zahar {
+   font-size: 25px;
+   top: 201px;
+   right: -153px;
+   position: relative;    
+}
+
+#lisens {
+    position: relative;
+    top: -268px;
+    right: -1026px;
+    font-size: 40px;
+    font-family:Neoneon;
+    color:#0f27d4;
+   
+}
+#order {
+    position: relative;
+    top: -61px;
+    right:-89px;
+    font-size: 24px;
+}
+	.baek {
+	 filter: blur(10px);
+         filter: url(#blur);
+	}
+#text2 {
+color:crimson;
+position: relative;
+left: 9px;
+margin-top: 55px; 
+font-size: 18px;
+}
+
+</style>
+</head>
+<header>
+           <nav>
+            <div class="logo-holger"></div>
+           
+            </nav>
+    </header>       
+<div id="text">
+Благодарное радио
+</div>
+<!-- RadioBOSS Cloud Artwork Widget (Start) -->
+<img id='rbcloud_cover6302' src='https://c2.radioboss.fm/w/artwork/375.png' width='150' height='150' alt='cover art'>
+<script src='https://c2.radioboss.fm/w/cover.js?u=375&amp;wid=19945'></script>
+<!-- RadioBOSS Cloud Artwork Widget (End) -->
+<!-- RadioBOSS Cloud NowPlaying Widget (Start) -->
+<div id="lisens">Слушателей: <span id='rbcloud_listeners9021'>...</span></div>
+    <div id="trak"><marquee behavior="scroll" direction="right"><div id='rbcloud_nowplaying9021'></div><!-- RadioBOSS Cloud NowPlaying Widget (Start) -->
+<div id='rbcloud_nowplaying11413'></div>
+<a class="fab fa-instagram" href="https://www.instagram.com/blagradio"></a>
+	    
+<script src='https://c2.radioboss.fm/w/nowplaying.js?u=375&amp;wid=9021&amp;nnt=1'></script>
+<!-- RadioBOSS Cloud NowPlaying Widget (End) --></marquee></div>    
+    <!-- RadioBOSS Cloud NowPlaying Widget (End) -->
+<div>
+	<button onclick="document.getElementById('player').play()" class="button play">Play</button>
+	<button onclick="document.getElementById('player').pause()"class="button stop">Stop</button>
+	<button onclick="document.getElementById('player').volume+=0.1" class="volume1 volume">Громкость +</button>
+	<button onclick="document.getElementById('player').volume-=0.1" class="volume2 volume">Громкость -</button>
+  
+<audio id="player" src="https://c2.radioboss.fm:18375/stream"></audio>
+	<div id =text2>Благодарное радио &copy;<script>document.write(new Date().getFullYear());</script> Все права защищены </div> 
+	<a class="fab fa-instagram" href="https://www.instagram.com/blagradio"></a>
+</div>
+</body>    
+</html>   
